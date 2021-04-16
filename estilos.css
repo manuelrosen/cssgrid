@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero{
+    background-image: url("./img/hero_image.jpg");
+    background-size: cover;
+   
+}
+
+.contenedor_uno{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:"logo   menus"
+                        "titulo titulo2"
+                        "subtitulo subtitulo2"
+                        "cta  cta2";
+
+}
+
+.contenedor_uno .logo__hero{
+    grid-area: logo;
+    padding-top: 30px;
+}
+
+.logo__hero img{
+  width: 8%;
+   
+}
+
+.contenedor_uno  .menus__hero{
+    grid-area: menus;
+    padding-top: 40px;
+   
+
+}
+
+.menus__hero a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.contenedor_uno .titulo__hero{
+    grid-area: titulo;
+    font-family: 'Barlow', sans-serif;
+    font-size: 80px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 75px;
+
+}
+
+.contenedor_uno .subtitulo__hero{
+    grid-area: subtitulo;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contenedor_uno .cta__hero{
+    grid-area: cta;
+    background: rebeccapurple;
+    width: 50%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    border-radius: 12px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contenedor_uno .cta__hero:hover{
+    background: white;
+    color: rebeccapurple;
+    cursor: pointer;
+}
+
+.contenedor_dos{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, ifr);
+    grid-template-rows: repeat(2 auto);
+    grid-template-areas: "titulo titulo titulo"
+                          "cards1 cards2 cards3";
+
+}
+
+.contenedor_dos .titulo__contenedor_dos{
+    grid-area: titulo;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+.contenedor_dos .card__contenedor_dos--1{
+    grid-area: cards1;
+    text-align: center;
+
+}
+.contenedor_dos .card__contenedor_dos--2{
+    grid-area: cards2;
+    text-align: center;
+}
+.contenedor_dos .card__contenedor_dos--3{
+    grid-area: cards3;
+    text-align: center;
+}
+
+[class^="fas"]{
+    font-size: 40px;
+    background: rebeccapurple;
+    padding: 25px;
+    color: white;
+    border-radius: 70px;
+}
+
+.tarjeta-titulo__contenedor_dos{
+    font-size: 30px;
+    font-family: 'Barlow', sans-serif;
+    margin-top: 20px;
+}
+
+.tarjeta-texto__contenedor_dos{
+    
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    
+}
+.infoproduct{
+background: #f3f3f3;
+padding-top: 150px;
+}
+
+.contenedor_tres{
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas: "imagen1 cardinfo1"
+                          "cardinfo2 imagen2";
+    
+}
+
+.contenedor_tres .imagen__contenedor_tres--uno{
+    grid-area: imagen1;
+}
+.contenedor_tres .imagen__contenedor_tres--uno img{
+    width: 80%;
+}
+
+.contenedor_tres .imagen__contenedor_tres--dos img{
+    width: 80%;
+}
+
+
+.contenedor_tres .imagen__contenedor_tres--dos{
+    grid-area: imagen2;
+}
+
+.contenedor_tres .cardinformation--1{
+    grid-area: cardinfo1;
+    margin-bottom: 200px;
+}
+
+.contenedor_tres .cardinformation--2{
+    grid-area: cardinfo2;
+    margin-bottom: 100px;
+}
+
+.titulo__contenedor_tres--uno,
+.titulo__contenedor_tres--dos{
+    font-family: 'Barlow', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto__contenedor_tres--uno,
+.texto__contenedor_tres--dos{
+    font-size: 20px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+.lista__contenedor_tres--uno,
+.lista__contenedor_tres--dos{
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.cta__contenedor_tres--uno a,
+.cta__contenedor_tres--dos a{
+    background: rebeccapurple;
+    color: white;
+    padding: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+
+}
